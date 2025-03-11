@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sneakers</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="Style/style-novo.css">
+</head>
+
+<body>
+    <div class="container">
+		<img src="imagens/SNEAKERS (1).png" class="logo">
+        <h1>Criar novo Sneaker</h1>
+        <form name="frmSneaker" action="insert">
+            <div class="card">
+				<div id="imagem-preview"></div>
+                <table>
+                    <tr>
+                        <td><input type="text" name="modelo" placeholder="Modelo"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="collab" placeholder="Collab"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="cor" placeholder="Cor"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="url" name="imagem" id="imagemInput" placeholder="Imagem"></td>
+                    </tr>
+                </table>
+                <input type="button" value="Adicionar" onclick="validar()">
+            </div>
+        </form>
+      
+    </div>
+    <script src="scripts/validador.js"></script>
+    <script>
+        const imagemInput = document.getElementById('imagemInput');
+        const imagemPreview = document.getElementById('imagem-preview');
+
+        imagemInput.addEventListener('input', () => {
+            const imageUrl = imagemInput.value.trim();
+
+            if (isValidUrl(imageUrl)) {
+                imagemPreview.innerHTML = `<img src="${imageUrl}" alt="Imagem Preview">`;
+            } else {
+                imagemPreview.innerHTML = '';
+            }
+        });5
+
+        function isValidUrl(url) {
+            try {
+                new URL(url);
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

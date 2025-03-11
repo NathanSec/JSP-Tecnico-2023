@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Oswald:wght@400;700&display=swap');
+body{
+	font-family: 'Hedvig Letters Serif', serif;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	font-weight:400;
+}
+
+h1{
+	color: red;
+}
+
+.Botao1 {
+	text-decoration:none;
+	background-color: #CCC;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size:1.2em;
+	font-weight:700;
+	border-radius: 5px;
+}
