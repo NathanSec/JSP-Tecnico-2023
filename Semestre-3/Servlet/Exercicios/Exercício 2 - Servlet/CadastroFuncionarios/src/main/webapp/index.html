@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Funcionários</title>
+    <link rel="stylesheet" href="styleFuncionarios.css">
+</head>
+<body>
+	<h1 class="titulo">Informações Pessoais - Funcionários</h1>
+    <div class="formulario-box">
+        <form method="post" action="/CadastroFuncionarios/CadastroFuncionariosServlet">
+            <p>Nome Completo: <input type="text" name="nome" size="50"></p>
+            <p>Número de Registro: <input type="number" name="registroFunc" size="8"></p>
+            <p>Sexo: <input type="text" name="sexo" size="12"></p>
+            <p>Endereço: <input type="text" name="endereco" size="60"></p>
+            <p>Telefone: <input type="text" name="telefone" size="11"></p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
