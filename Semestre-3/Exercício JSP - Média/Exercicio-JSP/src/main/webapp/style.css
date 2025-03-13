@@ -1,0 +1,29 @@
+body {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff66b2; 
+        }
+
+        table {
+            margin: 20px auto;
+            width: 80%;
+            background-color: #ff66b2; 
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #fff; 
+        }
+
+        th {
+            background-color: #ff3399; 
+            color: #fff; 
+        }
+
+        td {
+            background-color: #ff99cc;
+        }
